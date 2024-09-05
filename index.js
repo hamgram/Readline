@@ -16,12 +16,14 @@ function definirNome(){
         })
     }
 
-function bomDia(nomeDefinido){ //Função 
+//Função que estabelece a resposta recebendo o resolve da definirNome
+
+function bomDia(nomeDefinido){ 
     console.log("bom dia " + nomeDefinido)
-    rl.close()
+    rl.close() //Encerra a interface do readline
 }
 
-
+//
 definirNome().then( nomeExibido => { 
     bomDia(nomeExibido)
     rl.close()
