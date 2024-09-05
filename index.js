@@ -23,7 +23,7 @@ function bomDia(nomeDefinido){
     rl.close() //Encerra a interface do readline
 }
 
-//
+//Chamada das Funções. 
 definirNome().then( nomeExibido => { 
     bomDia(nomeExibido)
     rl.close()
